@@ -5,7 +5,7 @@ sap.ui.define([
 	"sap/m/MessageBox"
 ], function (mockserver, flpSandbox, FakeLrepConnectorLocalStorage, MessageBox) {
 	"use strict";
-
+	mockserver.init();
 	var aInitializations = [];
 
 	// initialize the mock server

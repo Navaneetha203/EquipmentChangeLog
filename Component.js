@@ -5,7 +5,7 @@ sap.ui.define(["sap/ui/core/UIComponent", "sap/ui/Device", "./model/models", "./
 			manifest: "json"
 		},
 		init: function () {
-			Mockserver.init();
+		
 			var oModel = new sap.ui.model.odata.v2.ODataModel({serviceUrl: "/destinations/service"});
 			this.setModel(oModel);
 			t.prototype.init.apply(this, arguments);
