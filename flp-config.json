@@ -1,0 +1,35 @@
+{
+    "application": {
+        "id": "",
+        "title": "com.mindset.EquipmentLog.EquipmentChangeLog",
+        "description": "EquipmentChangeLog",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/",
+        "appUrl": "#EquipmentChangeLog-Display",
+        "navigationComponentName": "com.mindset.EquipmentLog",
+        "intentSemanticObject": "EquipmentChangeLog",
+        "intentAction": "Display",
+        "html5ApplicationName": "equipmentchangelog",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [
+            "ce83578d-464b-4d52-880c-0af15f3af0c1-1606804329649"
+        ],
+        "contentPackages": [
+            "8f26c3fa-6216-429c-ac89-ed8ed0db2a9d"
+        ],
+        "categories": []
+    },
+    "tile": {
+        "type": "StaticTile",
+        "title": "Equipment Change Log",
+        "subtitle": "",
+        "searchKeywords": "Equipment Change Log,",
+        "displayIconUrl": "sap-icon://approvals",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "",
+        "refreshInterval": ""
+    }
+}

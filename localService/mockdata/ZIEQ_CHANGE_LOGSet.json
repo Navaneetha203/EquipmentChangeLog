@@ -1,0 +1,71 @@
+[{
+	"ChangeId": "ChangeId 1",
+	"RequestId": "RequestId 1",
+	"__metadata": {
+		"uri": "ZIEQ_CHANGE_LOGSet('ChangeId%201')",
+		"type": "ZIEQ_EQ_CHLG_PRELAY_CARD_SRV.ZIEQ_CHANGE_LOG"
+	}
+}, {
+	"ChangeId": "ChangeId 2",
+	"RequestId": "RequestId 2",
+	"__metadata": {
+		"uri": "ZIEQ_CHANGE_LOGSet('ChangeId%202')",
+		"type": "ZIEQ_EQ_CHLG_PRELAY_CARD_SRV.ZIEQ_CHANGE_LOG"
+	}
+}, {
+	"ChangeId": "ChangeId 3",
+	"RequestId": "RequestId 3",
+	"__metadata": {
+		"uri": "ZIEQ_CHANGE_LOGSet('ChangeId%203')",
+		"type": "ZIEQ_EQ_CHLG_PRELAY_CARD_SRV.ZIEQ_CHANGE_LOG"
+	}
+}, {
+	"ChangeId": "ChangeId 4",
+	"RequestId": "RequestId 4",
+	"__metadata": {
+		"uri": "ZIEQ_CHANGE_LOGSet('ChangeId%204')",
+		"type": "ZIEQ_EQ_CHLG_PRELAY_CARD_SRV.ZIEQ_CHANGE_LOG"
+	}
+}, {
+	"ChangeId": "ChangeId 5",
+	"RequestId": "RequestId 5",
+	"__metadata": {
+		"uri": "ZIEQ_CHANGE_LOGSet('ChangeId%205')",
+		"type": "ZIEQ_EQ_CHLG_PRELAY_CARD_SRV.ZIEQ_CHANGE_LOG"
+	}
+}, {
+	"ChangeId": "ChangeId 6",
+	"RequestId": "RequestId 6",
+	"__metadata": {
+		"uri": "ZIEQ_CHANGE_LOGSet('ChangeId%206')",
+		"type": "ZIEQ_EQ_CHLG_PRELAY_CARD_SRV.ZIEQ_CHANGE_LOG"
+	}
+}, {
+	"ChangeId": "ChangeId 7",
+	"RequestId": "RequestId 7",
+	"__metadata": {
+		"uri": "ZIEQ_CHANGE_LOGSet('ChangeId%207')",
+		"type": "ZIEQ_EQ_CHLG_PRELAY_CARD_SRV.ZIEQ_CHANGE_LOG"
+	}
+}, {
+	"ChangeId": "ChangeId 8",
+	"RequestId": "RequestId 8",
+	"__metadata": {
+		"uri": "ZIEQ_CHANGE_LOGSet('ChangeId%208')",
+		"type": "ZIEQ_EQ_CHLG_PRELAY_CARD_SRV.ZIEQ_CHANGE_LOG"
+	}
+}, {
+	"ChangeId": "ChangeId 9",
+	"RequestId": "RequestId 9",
+	"__metadata": {
+		"uri": "ZIEQ_CHANGE_LOGSet('ChangeId%209')",
+		"type": "ZIEQ_EQ_CHLG_PRELAY_CARD_SRV.ZIEQ_CHANGE_LOG"
+	}
+}, {
+	"ChangeId": "ChangeId 10",
+	"RequestId": "RequestId 10",
+	"__metadata": {
+		"uri": "ZIEQ_CHANGE_LOGSet('ChangeId%2010')",
+		"type": "ZIEQ_EQ_CHLG_PRELAY_CARD_SRV.ZIEQ_CHANGE_LOG"
+	}
+}]

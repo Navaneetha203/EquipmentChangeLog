@@ -1,0 +1,13 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<ViewSettingsDialog
+		confirm="handleSortDialogConfirm">
+		<sortItems>
+			<ViewSettingsItem text="Equipment ID" key="Equipmentid" selected="true" />
+			<ViewSettingsItem text="Functional Location" key="Functionallocation"  />
+			<ViewSettingsItem text="Submitted On" key="SubmittedOn"  />
+			<ViewSettingsItem text="Approved/Rejected On" key="ApprovedOn"  />
+		</sortItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>

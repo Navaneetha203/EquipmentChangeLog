@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edmx:Edmx xmlns:sap="http://www.sap.com/Protocols/SAPData" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+	xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" Version="1.0">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema xml:lang="en" xmlns="http://schemas.microsoft.com/ado/2008/09/edm" sap:schema-version="1" Namespace="ZIEQ_EQ_CHLG_PRELAY_CARD_SRV">
+			<EntityType sap:content-version="1" Name="ZIEQ_CHANGE_LOG">
+				<Key>
+					<PropertyRef Name="ChangeId"/>
+				</Key>
+				<Property Name="ChangeId" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false"
+					sap:label="Number Range ZEQ_CH_LOG for Equipment Change Log" sap:unicode="false" MaxLength="12" Nullable="false" Type="Edm.String"/>
+				<Property Name="RequestId" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false"
+					sap:label="Request ID from ZIEQ_REQUEST table" sap:unicode="false" MaxLength="12" Nullable="false" Type="Edm.String"/>
+			</EntityType>
+			<EntityType sap:content-version="1" Name="ZEQuipmentChangeLog">
+				
+				<Key>
+					<PropertyRef Name="Changeid"/>
+				</Key>
+				<Property Name="Equipmentid" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Equipment"
+					sap:unicode="false" MaxLength="18" Nullable="false" Type="Edm.String"/>
+				<Property Name="Equipmentdesc" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false"
+					sap:label="Description" sap:unicode="false" MaxLength="40" Nullable="false" Type="Edm.String"/>
+				<Property Name="RequestId" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Length"
+					sap:unicode="false" MaxLength="12" Nullable="false" Type="Edm.String"/>
+				<Property Name="Changeid" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Length"
+					sap:unicode="false" MaxLength="12" Nullable="false" Type="Edm.String"/>
+				<Property Name="Fieldlabel" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false"
+					sap:label="30 Characters" sap:unicode="false" MaxLength="30" Nullable="false" Type="Edm.String"/>
+				<Property Name="Fieldname" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="30 Characters"
+					sap:unicode="false" MaxLength="30" Nullable="false" Type="Edm.String"/>
+				<Property Name="CurrentValue" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Char"
+					sap:unicode="false" MaxLength="40" Nullable="false" Type="Edm.String"/>
+				<Property Name="NewCalue" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Char"
+					sap:unicode="false" MaxLength="40" Nullable="false" Type="Edm.String"/>
+				<Property Name="SubmittedBy" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Changed by"
+					sap:unicode="false" MaxLength="12" Nullable="false" Type="Edm.String"/>
+				<Property Name="SubmittedOn" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Date"
+					sap:unicode="false" Nullable="false" Type="Edm.DateTime" Precision="7"/>
+				<Property Name="ApprovedBy" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Changed by"
+					sap:unicode="false" MaxLength="12" Nullable="false" Type="Edm.String"/>
+				<Property Name="ApprovedOn" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="char8"
+					sap:unicode="false" MaxLength="8" Nullable="false" Type="Edm.String"/>
+				<Property Name="Submittedfullname" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Char"
+					sap:unicode="false" MaxLength="40" Nullable="false" Type="Edm.String"/>
+				<Property Name="Approvedfullname" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Char"
+					sap:unicode="false" MaxLength="40" Nullable="false" Type="Edm.String"/>
+				<Property Name="Functionallocation" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false"
+					sap:label="Functional Loc." sap:unicode="false" MaxLength="40" Nullable="false" Type="Edm.String"/>
+			</EntityType>
+			
+			<EntityContainer Name="ZIEQ_EQ_CHLG_PRELAY_CARD_SRV_Entities" sap:supported-formats="atom json xlsx" m:IsDefaultEntityContainer="true">
+				<EntitySet sap:content-version="1" Name="ZIEQ_CHANGE_LOGSet" sap:updatable="false" sap:creatable="false" sap:pageable="false"
+					sap:deletable="false" EntityType="ZIEQ_EQ_CHLG_PRELAY_CARD_SRV.ZIEQ_CHANGE_LOG"/>
+				<EntitySet sap:content-version="1" Name="ZEQuipmentChangeLogSet" sap:updatable="false" sap:creatable="false" sap:pageable="false"
+					sap:deletable="false" EntityType="ZIEQ_EQ_CHLG_PRELAY_CARD_SRV.ZEQuipmentChangeLog"/>
+			</EntityContainer>
+			<atom:link xmlns:atom="http://www.w3.org/2005/Atom"
+				href="https://webidecp-hc2d8f9ae.dispatcher.us3.hana.ondemand.com/destinations/nppd_gw_dev_ALL/sap/opu/odata/sap/ZIEQ_EQ_CHLG_PRELAY_CARD_SRV/$metadata"
+				rel="self"/>
+			<atom:link xmlns:atom="http://www.w3.org/2005/Atom"
+				href="https://webidecp-hc2d8f9ae.dispatcher.us3.hana.ondemand.com/destinations/nppd_gw_dev_ALL/sap/opu/odata/sap/ZIEQ_EQ_CHLG_PRELAY_CARD_SRV/$metadata"
+				rel="latest-version"/>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

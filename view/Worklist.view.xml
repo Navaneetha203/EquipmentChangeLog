@@ -1,0 +1,87 @@
+<mvc:View controllerName="com.mindset.EquipmentLog.controller.Worklist" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:semantic="sap.f.semantic" xmlns:footerbar="sap.ushell.ui.footerbar">
+	<semantic:SemanticPage id="page" headerPinnable="false" toggleHeaderOnTitleClick="false">
+		<semantic:titleHeading>
+			<Title text="{i18n>worklistTitle}" level="H2"/>
+		</semantic:titleHeading>
+		<semantic:content>
+			<Table id="table" width="auto" items="{ path: '/ZEQuipmentChangeLogSet', sorter: { path: 'ApprovedOn', descending: true } }"
+				noDataText="{worklistView>/tableNoDataText}" busyIndicatorDelay="{worklistView>/tableBusyDelay}" growing="true" growingScrollToLoad="true"
+				updateFinished=".onUpdateFinished" sticky="HeaderToolbar,ColumnHeaders">
+				<headerToolbar>
+					<OverflowToolbar>
+						<Title id="tableHeader" text="{worklistView>/worklistTableTitle}" level="H3"/>
+						<ToolbarSpacer/>
+						<Button
+							tooltip="View Sort Settings"
+							icon="sap-icon://sort"
+							press="handleSortButtonPressed" />
+						<Button
+							tooltip="View Filter Settings"
+							icon="sap-icon://filter"
+							press="handleFilterButtonPressed" />
+						<SearchField id="searchField" tooltip="{i18n>worklistSearchTooltip}" liveChange="onSearch">
+							<layoutData>
+								<OverflowToolbarLayoutData maxWidth="200px" priority="NeverOverflow"/>
+							</layoutData>
+						</SearchField>
+					</OverflowToolbar>
+				</headerToolbar>
+				<infoToolbar>
+					<OverflowToolbar id="vsdFilterBar" visible="false">
+						<Text id="vsdFilterLabel" />
+					</OverflowToolbar>
+				</infoToolbar>
+				<columns>
+					<Column mergeDuplicates="true" mergeFunctionName="getTitle">
+						<Text text="Equipment"/>
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="Installed FL"/>
+					</Column>
+					<Column>
+						<Text text="Field Name"/>
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="Original"/>
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="New"/>
+					</Column>
+					<!--<Column minScreenWidth="Tablet" demandPopin="true">-->
+					<!--	<Text text="Submitted"/>-->
+					<!--</Column>-->
+					<!--<Column minScreenWidth="Tablet" demandPopin="true">-->
+					<!--	<Text text="Status"/>-->
+					<!--</Column>-->
+					<!--<Column width="1.5em" hAlign="End"></Column>-->
+				</columns>
+				<items>
+					<ColumnListItem type="Active">
+						<cells>
+							<ObjectIdentifier title="{Equipmentid}" text="{Equipmentdesc}"/>
+							<Text text="{Functionallocation}"/>
+							<Text text="{Fieldlabel}" tooltip="{Fieldname}"/>
+							<Text text="{CurrentValue}"/>
+							<Text text="{NewCalue}"/>
+							<!--<ObjectIdentifier title="{SubmittedBy}"-->
+							<!--	text="{ path: 'SubmittedOn', type: 'sap.ui.model.type.Date', formatOptions: { style: 'short',UTC:true }}"/>-->
+							<!--<ObjectIdentifier title="{ApprovedBy}" -->
+							<!--	text="{ path: 'ApprovedOn', type: 'sap.ui.model.type.Date', formatOptions: { style: 'short',UTC:true }}"/>-->
+							<!--<core:Icon-->
+							<!--	src="{= ${Status} === 'APPROVED' ? 'sap-icon://accept' : 'sap-icon://decline'}"-->
+							<!--	class="size1"-->
+							<!--	color="{= ${Status} === 'APPROVED' ? 'green' : 'red'}"-->
+							<!--	tooltip="{Status}"-->
+							<!--	>-->
+							<!--	<core:layoutData>-->
+							<!--		<FlexItemData growFactor="1" />-->
+							<!--	</core:layoutData>-->
+							<!--</core:Icon>-->
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</semantic:content>
+	</semantic:SemanticPage>
+</mvc:View>
