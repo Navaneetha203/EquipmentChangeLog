@@ -1,40 +1,43 @@
-<mvc:View
-	controllerName="com.mindset.EquipmentLog.controller.Object"
-	xmlns="sap.m"
-	xmlns:mvc="sap.ui.core.mvc"
-	xmlns:semantic="sap.f.semantic"
-	xmlns:footerbar="sap.ushell.ui.footerbar">
-
-	<semantic:SemanticPage
-		id="page"
-		headerPinnable="false"
-		toggleHeaderOnTitleClick="false"
-		busy="{objectView>/busy}"
-		busyIndicatorDelay="{objectView>/delay}">
-
-		<semantic:titleHeading>
-			<Title
-				text="{EquipmentId}"
-				level="H2"/>
-		</semantic:titleHeading>
-
-		<semantic:headerContent>
-			<ObjectNumber
-			/>
-		</semantic:headerContent>
-
-		<semantic:sendEmailAction>
-			<semantic:SendEmailAction id="shareEmail" press=".onShareEmailPress"/>
-		</semantic:sendEmailAction>
-
-		<semantic:shareInJamAction>
-			<semantic:ShareInJamAction id="shareInJam" visible="{FLP>/isShareInJamActive}" press=".onShareInJamPress"/>
-		</semantic:shareInJamAction>
-
-		<semantic:saveAsTileAction>
-			<footerbar:AddBookmarkButton id ="shareTile" title="{objectView>/saveAsTileTitle}"/>
-		</semantic:saveAsTileAction>
-
-	</semantic:SemanticPage>
-
+<mvc:View controllerName="com.mindset.EquipmentLog.controller.Object" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:semantic="sap.f.semantic" xmlns:footerbar="sap.ushell.ui.footerbar">
+	<Page id="idPage"  class="sapUiResponsivePadding--header">
+		<!-- this CSS class add a standard spacing to all the page content -->
+		<content>
+			<ObjectHeader title="{i18n>Serial}-{Serial}" backgroundDesign="Solid">
+				<attributes>
+					<ObjectAttribute title="{i18n>EquipmentDec}" text="{EquipmentDec}"/>
+					<ObjectAttribute title="{i18n>EquipmentType}" text="{EquipmentType}"/>
+				</attributes>
+				<statuses>
+					<ObjectStatus title="{i18n>SubName}" text="{SubName}" />
+						<ObjectStatus title="{i18n>district}" text="{Distinct}" />
+				</statuses>
+			</ObjectHeader>
+			<f:SimpleForm id="SimpleFormChange480_12120Dual" editable="true" layout="ResponsiveGridLayout" title="Header" labelSpanXL="4"
+				labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0"
+				columnsXL="2" columnsL="2" columnsM="2" singleContainerFullSize="false">
+				<f:content>
+					<core:Title text="{i18n>current}"/>
+					<Label text="{i18n>ManufacturersSerialNumber}"/>
+				     <Text text="{Manufacturers1}"/>
+					<core:Title text="{i18n>updated}"/>
+					<Label text="{i18n>ManufacturersSerialNumber}"/>
+					<Text text="{Manufacturers2}" />
+				</f:content>
+			</f:SimpleForm>
+				<f:SimpleForm id="SimpleFormChange480" editable="true" layout="ResponsiveGridLayout" title="Characteristics" labelSpanXL="4"
+				labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0"
+				columnsXL="2" columnsL="2" columnsM="2" singleContainerFullSize="false">
+				<f:content>
+					<core:Title text="{i18n>current}"/>
+					<Label text="{i18n>RelayBootFirmware}"/>
+					<Text text="{RelayBookFirware}"/>
+					<core:Title text="{i18n>updated}"/>
+					<Label text="{i18n>RelayBootFirmware}"/>
+					<Text text="{RelayBookFirware2}" />
+					
+				</f:content>
+			</f:SimpleForm>
+		</content>
+	</Page>
 </mvc:View>

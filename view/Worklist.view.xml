@@ -57,7 +57,7 @@
 					<!--<Column width="1.5em" hAlign="End"></Column>-->
 				</columns>
 				<items>
-					<ColumnListItem type="Active">
+					<ColumnListItem type="Active" press="onPress">
 						<cells>
 							<ObjectIdentifier title="{Equipmentid}" text="{Equipmentdesc}"/>
 							<Text text="{Functionallocation}"/>

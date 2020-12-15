@@ -11,9 +11,26 @@
 					sap:label="Number Range ZEQ_CH_LOG for Equipment Change Log" sap:unicode="false" MaxLength="12" Nullable="false" Type="Edm.String"/>
 				<Property Name="RequestId" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false"
 					sap:label="Request ID from ZIEQ_REQUEST table" sap:unicode="false" MaxLength="12" Nullable="false" Type="Edm.String"/>
+				<Property Name="EquipmentType" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false"
+					sap:label="Equipment Type" sap:unicode="false" MaxLength="12" Nullable="false" Type="Edm.String"/>
+				<Property Name="EquipmentDec" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false"
+					sap:label="Equipment Decscription" sap:unicode="false" MaxLength="12" Nullable="false" Type="Edm.String"/>
+				<Property Name="Serial" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Serial"
+					sap:unicode="false" MaxLength="12" Nullable="false" Type="Edm.String"/>
+				<Property Name="SubName" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Sub Name"
+					sap:unicode="false" MaxLength="12" Nullable="false" Type="Edm.String"/>
+				<Property Name="Distinct" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Distinct"
+					sap:unicode="false" MaxLength="12" Nullable="false" Type="Edm.String"/>
+				<Property Name="Manufacturers1" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Manufacturers1"
+					sap:unicode="false" MaxLength="12" Nullable="false" Type="Edm.String"/>
+				<Property Name="Manufacturers2" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="Manufacturers2"
+					sap:unicode="false" MaxLength="12" Nullable="false" Type="Edm.String"/>
+						<Property Name="RelayBookFirware" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="RelayBookFirware"
+					sap:unicode="false" MaxLength="12" Nullable="false" Type="Edm.String"/>
+						<Property Name="RelayBookFirware2" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false" sap:label="RelayBookFirware2"
+					sap:unicode="false" MaxLength="12" Nullable="false" Type="Edm.String"/>
 			</EntityType>
 			<EntityType sap:content-version="1" Name="ZEQuipmentChangeLog">
-				
 				<Key>
 					<PropertyRef Name="Changeid"/>
 				</Key>
@@ -48,7 +65,6 @@
 				<Property Name="Functionallocation" sap:filterable="false" sap:sortable="false" sap:updatable="false" sap:creatable="false"
 					sap:label="Functional Loc." sap:unicode="false" MaxLength="40" Nullable="false" Type="Edm.String"/>
 			</EntityType>
-			
 			<EntityContainer Name="ZIEQ_EQ_CHLG_PRELAY_CARD_SRV_Entities" sap:supported-formats="atom json xlsx" m:IsDefaultEntityContainer="true">
 				<EntitySet sap:content-version="1" Name="ZIEQ_CHANGE_LOGSet" sap:updatable="false" sap:creatable="false" sap:pageable="false"
 					sap:deletable="false" EntityType="ZIEQ_EQ_CHLG_PRELAY_CARD_SRV.ZIEQ_CHANGE_LOG"/>

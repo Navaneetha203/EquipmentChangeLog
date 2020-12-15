@@ -1,71 +1,161 @@
 [{
-	"ChangeId": "ChangeId 1",
-	"RequestId": "RequestId 1",
+	"ChangeId": "1",
+	"RequestId": "101",
+	"EquipmentType": "EQUI",
+	"EquipmentDec": "EquipmentDec 1",
+	"Serial": "20060330030",
+	"SubName": "beverly",
+	"Distinct": "Distinct 1",
+	"Manufacturers1": "20060330010",
+	"Manufacturers2": "20060330017",
+	"RelayBookFirware": "192.168.37.17710",
+	"RelayBookFirware2": "192.168.37.17710",
 	"__metadata": {
-		"uri": "ZIEQ_CHANGE_LOGSet('ChangeId%201')",
+		"uri": "ZIEQ_CHANGE_LOGSet('1')",
 		"type": "ZIEQ_EQ_CHLG_PRELAY_CARD_SRV.ZIEQ_CHANGE_LOG"
 	}
 }, {
-	"ChangeId": "ChangeId 2",
-	"RequestId": "RequestId 2",
+	"ChangeId": "2",
+	"RequestId": "102",
+	"EquipmentType": "EQKT",
+	"EquipmentDec": "EquipmentDec 2",
+	"Serial": "20060330031",
+	"SubName": "beverly",
+	"Distinct": "101997",
+	"Manufacturers1": "20060330011",
+	"Manufacturers2": "20060330018",
+	"RelayBookFirware": "192.168.37.17710",
+	"RelayBookFirware2": "192.168.37.17710",
 	"__metadata": {
-		"uri": "ZIEQ_CHANGE_LOGSet('ChangeId%202')",
+		"uri": "ZIEQ_CHANGE_LOGSet('2')",
 		"type": "ZIEQ_EQ_CHLG_PRELAY_CARD_SRV.ZIEQ_CHANGE_LOG"
 	}
 }, {
-	"ChangeId": "ChangeId 3",
-	"RequestId": "RequestId 3",
+	"ChangeId": "3",
+	"RequestId": "103",
+	"EquipmentType": "EQUZ",
+	"EquipmentDec": "EquipmentDec 3",
+	"Serial": "20060330032",
+	"SubName": "beverly",
+	"Distinct": "101994",
+	"Manufacturers1": "20060330012",
+	"Manufacturers2": "20060330018",
+	"RelayBookFirware": "192.168.37.17710",
+	"RelayBookFirware2": "192.168.37.17710",
 	"__metadata": {
-		"uri": "ZIEQ_CHANGE_LOGSet('ChangeId%203')",
+		"uri": "ZIEQ_CHANGE_LOGSet('3')",
 		"type": "ZIEQ_EQ_CHLG_PRELAY_CARD_SRV.ZIEQ_CHANGE_LOG"
 	}
 }, {
-	"ChangeId": "ChangeId 4",
-	"RequestId": "RequestId 4",
+	"ChangeId": "4",
+	"RequestId": "104",
+	"EquipmentType": "ILOA",
+	"EquipmentDec": "EquipmentDec 4",
+	"Serial": "20060330033",
+	"SubName": "beverly",
+	"Distinct": "101995",
+	"Manufacturers1": "20060330013",
+	"Manufacturers2": "20060330019",
+	"RelayBookFirware": "192.168.37.17710",
+	"RelayBookFirware2": "192.168.37.17710",
 	"__metadata": {
-		"uri": "ZIEQ_CHANGE_LOGSet('ChangeId%204')",
+		"uri": "ZIEQ_CHANGE_LOGSet('4')",
 		"type": "ZIEQ_EQ_CHLG_PRELAY_CARD_SRV.ZIEQ_CHANGE_LOG"
 	}
 }, {
-	"ChangeId": "ChangeId 5",
-	"RequestId": "RequestId 5",
+	"ChangeId": "5",
+	"RequestId": "105",
+	"EquipmentType": "IHSG",
+	"EquipmentDec": "EquipmentDec 5",
+	"Serial": "20060330034",
+	"SubName": "beverly",
+	"Distinct": "101995",
+	"Manufacturers1": "20060330014",
+	"Manufacturers2": "20060330020",
+	"RelayBookFirware": "192.168.37.17710",
+	"RelayBookFirware2": "192.168.37.17710",
 	"__metadata": {
-		"uri": "ZIEQ_CHANGE_LOGSet('ChangeId%205')",
+		"uri": "ZIEQ_CHANGE_LOGSet('5')",
 		"type": "ZIEQ_EQ_CHLG_PRELAY_CARD_SRV.ZIEQ_CHANGE_LOG"
 	}
 }, {
-	"ChangeId": "ChangeId 6",
-	"RequestId": "RequestId 6",
+	"ChangeId": "6",
+	"RequestId": "106",
+	"EquipmentType": "IHPA",
+	"EquipmentDec": "EquipmentDec 6",
+	"Serial": "20060330035",
+	"SubName": "beverly",
+	"Distinct": "Distin101994",
+	"Manufacturers1": "20060330015",
+	"Manufacturers2": "20060330021",
+	"RelayBookFirware": "192.168.37.17710",
+	"RelayBookFirware2": "192.168.37.17710",
 	"__metadata": {
-		"uri": "ZIEQ_CHANGE_LOGSet('ChangeId%206')",
+		"uri": "ZIEQ_CHANGE_LOGSet('6')",
 		"type": "ZIEQ_EQ_CHLG_PRELAY_CARD_SRV.ZIEQ_CHANGE_LOG"
 	}
 }, {
-	"ChangeId": "ChangeId 7",
-	"RequestId": "RequestId 7",
+	"ChangeId": "7",
+	"RequestId": "107",
+	"EquipmentType": "FLEET",
+	"EquipmentDec": "EquipmentDec 7",
+	"Serial": "20060330036",
+	"SubName": "beverly",
+	"Distinct": "101993",
+	"Manufacturers1": "20060330016",
+	"Manufacturers2": "20060330022",
+	"RelayBookFirware": "192.168.37.17710",
+	"RelayBookFirware2": "192.168.37.17710",
 	"__metadata": {
-		"uri": "ZIEQ_CHANGE_LOGSet('ChangeId%207')",
+		"uri": "ZIEQ_CHANGE_LOGSet('7')",
 		"type": "ZIEQ_EQ_CHLG_PRELAY_CARD_SRV.ZIEQ_CHANGE_LOG"
 	}
 }, {
-	"ChangeId": "ChangeId 8",
-	"RequestId": "RequestId 8",
+	"ChangeId": "8",
+	"RequestId": "108",
+	"EquipmentType": "T024I",
+	"EquipmentDec": "EquipmentDec 8",
+	"Serial": "20060330037",
+	"SubName": "beverly",
+	"Distinct": "101992",
+	"Manufacturers1": "20060330016",
+	"Manufacturers2": "20060330023",
+	"RelayBookFirware": "192.168.37.17710",
+	"RelayBookFirware2": "192.168.37.17710",
 	"__metadata": {
-		"uri": "ZIEQ_CHANGE_LOGSet('ChangeId%208')",
+		"uri": "ZIEQ_CHANGE_LOGSet('8')",
 		"type": "ZIEQ_EQ_CHLG_PRELAY_CARD_SRV.ZIEQ_CHANGE_LOG"
 	}
 }, {
-	"ChangeId": "ChangeId 9",
-	"RequestId": "RequestId 9",
+	"ChangeId": "9",
+	"RequestId": "109",
+	"EquipmentType": "T370Z",
+	"EquipmentDec": "EquipmentDec 9",
+	"Serial": "20060330038",
+	"SubName": "beverly",
+	"Distinct": "101990",
+	"Manufacturers1": "20060330017",
+	"Manufacturers2": "20060330024",
+	"RelayBookFirware": "192.168.37.177",
+	"RelayBookFirware2": "192.168.37.177",
 	"__metadata": {
-		"uri": "ZIEQ_CHANGE_LOGSet('ChangeId%209')",
+		"uri": "ZIEQ_CHANGE_LOGSet('9')",
 		"type": "ZIEQ_EQ_CHLG_PRELAY_CARD_SRV.ZIEQ_CHANGE_LOG"
 	}
 }, {
-	"ChangeId": "ChangeId 10",
-	"RequestId": "RequestId 10",
+	"ChangeId": "10",
+	"RequestId": "110",
+	"EquipmentType": "T370T",
+	"EquipmentDec": "EquipmentDec 10",
+	"Serial": "20060330039",
+	"SubName": "beverly",
+	"Distinct": "101991",
+	"Manufacturers1": "20060330016",
+	"Manufacturers2": "20060330025",
+	"RelayBookFirware": "192.168.37.177",
+	"RelayBookFirware2": "192.168.37.17710",
 	"__metadata": {
-		"uri": "ZIEQ_CHANGE_LOGSet('ChangeId%2010')",
+		"uri": "ZIEQ_CHANGE_LOGSet('10')",
 		"type": "ZIEQ_EQ_CHLG_PRELAY_CARD_SRV.ZIEQ_CHANGE_LOG"
 	}
 }]

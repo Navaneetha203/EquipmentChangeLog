@@ -1,13 +1,14 @@
 sap.ui.define(["sap/ui/core/UIComponent", "sap/ui/Device", "./model/models", "./controller/ErrorHandler","com/mindset/EquipmentLog/localService/mockserver"], function (t, e, s, i,Mockserver) {
 	"use strict";
+	Mockserver.init();                         
 	return t.extend("com.mindset.EquipmentLog.Component", {
 		metadata: {
 			manifest: "json"
 		},
 		init: function () {
 		
-			var oModel = new sap.ui.model.odata.v2.ODataModel({serviceUrl: "/destinations/service"});
-			this.setModel(oModel);
+			// var oModel = new sap.ui.model.odata.v2.ODataModel({serviceUrl: "/destinations/service"});
+			// this.setModel(oModel);
 			t.prototype.init.apply(this, arguments);
 			this._oErrorHandler = new i(this);
 			this.setModel(s.createDeviceModel(), "device");
