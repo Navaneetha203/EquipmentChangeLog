@@ -109,7 +109,7 @@ sap.ui.define(["./BaseController", "sap/ui/model/json/JSONModel", "../model/form
 			_showObject: function (e) {
 				this.getRouter().navTo("object", {
 					objectId: e.getBindingContext().getObject().Changeid
-				})
+				});
 			},
 			_applySearch: function (e) {
 				var t = this._oTable;
